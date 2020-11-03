@@ -1,0 +1,44 @@
+﻿@model ProjectPage1and2.Models.ToolsResourcesAdvice
+
+@{
+    // Layout = null;
+}
+
+<h2> Edit Tool </h2>
+
+<form method="post">
+    <div asp-validation-summary="All">
+
+    </div>
+    Id:
+    <input asp-for="toolID" />
+    <br />
+
+    Tool Name:
+    <input asp-for="toolName" />
+    <br />
+
+    Gifting To:
+    <input asp-for="giftedTo" />
+    <br />
+
+    Gifted From:
+    <input asp-for="giftedFrom" />
+    <br />
+
+    Phone Number:
+    <input asp-for="phoneNumber" />
+    <br />
+
+    Address:
+    <input asp-for="address" />
+    <br />
+
+    Received?
+    <input asp-for="received" />
+    @*<input type ="checkbox" value="received"  this wasnt necessary, it automatically populated a checkbox*@
+    <input type="submit" value="Submit your gift" />
+
+
+
+</form>
